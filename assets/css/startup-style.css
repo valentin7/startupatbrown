@@ -61,19 +61,25 @@
   }
   
    .red {
-  	background: #ff0b40;
+  	background:  #ff0b40;
+  	
   		overflow: hidden;
 
 /*   	height: 200%;  */
 /*   	width: 200%; */
   }
   
+  .gray {
+	  background: #ffffff;
+	  
+  }
+  
  /* For tablets and smaller */
 @media (max-width: 1024px) {
   
   .big-sides{
-	  width: 80%;
-	  height: 80%;
+/* 	  /padding-left: 20em; */
+	  left: 40px;
   }
   
   
