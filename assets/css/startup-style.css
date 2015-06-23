@@ -8,7 +8,9 @@
     height:100%;
   }
 
-  body {font-family:sans-serif;}
+  body {
+	  font-family: 'Montserrat', sans-serif;
+  }
 
   body > div {
   	position:fixed;
@@ -20,6 +22,10 @@
     background-size:cover;
   }
 
+  h3 {
+	  text-align: center;
+	  color: #737373;
+  }
 /*
   body > div:nth-child(1) {
     background-image:url(../img/startup-bg.png) top;
@@ -70,9 +76,40 @@
   }
   
   .gray {
-	  background: #ffffff;
+	  background: #8c8c8c;
 	  
   }
+  
+  .logo {
+	  text-align: center;
+	  margin: auto;
+	  padding-top: 30px;
+	  width: 30%;
+	  z-index:49;
+  }
+  
+  #logo-symbol {
+	  width: 10%;
+  }
+  
+  #circle {
+	width: 20px;
+	height: 20px;
+	position: center;
+	background: white;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+}
+  
   
  /* For tablets and smaller */
 @media (max-width: 1024px) {
@@ -81,6 +118,30 @@
 /* 	  /padding-left: 20em; */
 	  left: 40px;
   }
+ 
+  
+  
+  
+  
+  }
+  
+  @media (max-width: 760px) {
+  
+  .logo {
+	  width: 45%;
+  }
+  
+  #logo-symbol {
+	  width: 20%;
+  }
+/*
+  .logo {
+
+	  width: 10%;
+  }
+*/
+  
+  
   
   
   }
@@ -97,18 +158,33 @@
 	}
 */
 	  
-  #logo {
-	  text-align: center;
-	  margin: auto;
-	  padding-top: 30px;
+	  #bottom {
+		  width: 120%;
+	  }
+	  #right-red {
+		  height: 128%;
+		  width: 128%;
+	  }
 	  
-  }
+	  
+ 
+ #top-right-yellow {
+	 width: 70%;
+ }
+  
+  #triangle-right {
+	width: 20%;
+	height: 20%;
+	border-top: 50px solid transparent;
+	border-left: 100px solid blue;
+	border-bottom: 50px solid transparent;
+	}
 
   .box {
     position:absolute;
     left:0;
     height:100%;
-    background:#ffc963;
+    background:#ff0b40;
   }
 
   p {margin:1em 0;}

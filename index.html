@@ -9,12 +9,18 @@
     <meta name="description" content="">
     <meta name="author" content="Startup@Brown">
     <link rel="icon" href="assets/img/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
     <title>Startup@Brown</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet"> 
+
     <link href="assets/css/startup-style.css" rel="stylesheet">
+    <link href="assets/css/component.css" rel="stylesheet">
+    <script src="assets/js/modernizr.custom.js"></script>
+
+
 
 </head>
 
@@ -24,30 +30,84 @@
   <div id="bg3" data-0="background-position:0px 0px;" data-end="background-position:-500px -6000px;"></div> -->
 
 
+  <section>
+        
+  </section>
+
   
 
-  <div id="before" data-0="transform:translate(0,80%);" data-100p="transform:translate(0,0%)" data-_box-100p="" data-_box-200p="transform:translate(0,-100%)">
+
+
+  <div class="red big-sides"  data-0-top="transform:translate(-85%,-10%)rotate(-40deg);" data-100p="transform:translate(-45%,10%)rotate(-50deg)"> </div>
+
+  <div id="right-red" class="red big-sides" data-0-top="transform:translate(70%,30%)rotate(30deg);" data-100p="transform:translate(0%,25%)rotate(30deg)"> </div>
+
+
+  <div id="top-right-yellow" class="yellow big-sides" data-0-top="transform:translate(85%,-98%)rotate(-30deg);" data-100p="transform:translate(70%,-60%)rotate(5deg)"> </div>
+
+
+  <div id="bottom" class="yellow" data-0="transform:translate(-15%,90%)rotate(5deg);" data-70p="transform:translate(0,0%)rotate(0deg)" data-_box-100p="" data-_box-200p="transform:translate(0,-100%)rotate(0deg)">
     <div class="box" data-100p="width:0%;" data-_box-100p="width:100%"></div>
   </div>
 
 
-
-<div class="yellow big-sides"  data-0-top="transform:translate(-80%,5%)rotate(-50deg);" data-100p="transform:translate(-45%,10%)rotate(-50deg)"> </div>
-
-   <div class="red big-sides" data-0-top="transform:translate(80%,35%)rotate(30deg);" data-100p="transform:translate(45%,45%)rotate(30deg)"> </div>
-
-   <div class="gray big-sides" data-100-start="transform:translate(0%,-20%)rotate(40deg);" data-100p="transform:translate(45%,45%)rotate(40deg)"> </div>
-
-  
-
-
-
   <div data-_box-100p="transform:translate(0,100%)rotate(45deg);" data-_box-200p="transform:translate(0,0%)rotate(45deg);"></div>
 
-  <div data-0="transform:translate(0,0%);" data-100p="transform:translate(0,20%);" z>
-    <img id="logo" class="img-responsive" height="30%" width="30%" src="assets/img/logo.png">
-  </div>
+  <div data-0="transform:translate(0,0%);" data-50p="transform:translate(0,40%);" data-100p="transform:translate(0,0%);">
+    <img data-0="transform:scale(1);" data-30p="transform:scale(1);" data-50p="transform:scale(0);" data-100p="fill:rgb(255,255,255), transform:scale(100)" id="logo-symbol" class="logo img-responsive" src="assets/img/logo-symbol.png">
+    <img id="logo-letters" class="logo img-responsive" src="assets/img/logo-letters.png" 
+    data-0="opacity:1;" data-14p="opacity:0;">
+        <h3 data-0="opacity:1;" data-14p="opacity:0;">Inspiring future founders. Connecting students with startups.</h3>
 
+        
+    <!-- <div id="circle" class="centered" data-0="transform:translate(50%, 40%)scale(1);" data-50p="transform:translate(50%, 40%)scale(1);" data-100p="transform:translate(50%, 40%)scale(300);"></div> -->
+  </div>
+     <form id="theForm" class="simform" autocomplete="off">
+            <div class="simform-inner">
+              <ol class="questions">
+                <li>
+                  <span><label for="q1">What's your email?</label></span>
+                  <input id="q1" name="q1" type="text"/>
+                </li>
+                <li>
+                  <span><label for="q2">What's your name?</label></span>
+                  <input id="q2" name="q2" type="text"/>
+                </li>
+                <li>
+                  <span><label for="q3">What school do you go to?</label></span>
+                  <input id="q3" name="q3" type="text"/>
+                </li>
+                <li>
+                  <span><label for="q4">What year are you?</label></span>
+                  <input id="q4" name="q4" type="text"/>
+                </li>
+                <li>
+                  <span><label for="q5">What are you studying?</label></span>
+                  <input id="q5" name="q5" type="text"/>
+                </li>
+                <li>
+                  <span><label for="q6">Link to somewhere about you (website, LinkedIn, etc.)?</label></span>
+                  <input id="q6" name="q6" type="text"/>
+                </li>
+              </ol><!-- /questions -->
+              <button class="submit" type="submit">Send answers</button>
+              <div class="controls">
+                <button class="next"></button>
+                <div class="progress"></div>
+                <span class="number">
+                  <span class="number-current"></span>
+                  <span class="number-total"></span>
+                </span>
+                <span class="error-message"></span>
+              </div><!-- / controls -->
+            </div><!-- /simform-inner -->
+            <span class="final-message"></span>
+    </form><!-- /simform -->    
+
+
+
+  <div data-0="transform:translate(0,0%);" data-50p="transform:translate(0,40%);" data-100p="transform:translate(0,0%);">
+  </div>
 
   <script type="text/javascript" src="assets/js/skrollr.min.js"></script>
 
@@ -60,6 +120,30 @@
     }
   });
   </script>
+  <script src="assets/js/classie.js"></script>
+  <script src="assets/js/stepsForm.js"></script>
+    <script>
+      var theForm = document.getElementById( 'theForm' );
+
+      new stepsForm( theForm, {
+        onSubmit : function( form ) {
+          // hide form
+          classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
+
+          /*
+          form.submit()
+          or
+          AJAX request (maybe show loading indicator while we don't have an answer..)
+          */
+
+          // let's just simulate something...
+          var messageEl = theForm.querySelector( '.final-message' );
+          messageEl.innerHTML = 'Thank you! We\'ll be in touch.';
+          classie.addClass( messageEl, 'show' );
+        }
+      } );
+    </script>
+
 </body>
 
 </html>
