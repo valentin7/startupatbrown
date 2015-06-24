@@ -180,7 +180,7 @@
 .simform .progress {
 	width: 0%;
 	height: 0.15em;
-	background: rgba(0,0,0,0.3);
+	background: #ff0b40;/* //rgba(0,0,0,0.3); */
 	-webkit-transition: width 0.4s ease-in-out;
 	transition: width 0.4s ease-in-out;
 }
@@ -190,7 +190,7 @@
 	top: auto;
 	width: 100%;
 	height: inherit;
-	background: rgba(0,0,0,0.05);
+	background: rgba(0,0,0,0.05); 
 	content: '';
 }
 

@@ -22,9 +22,13 @@
     background-size:cover;
   }
 
-  h3 {
+  h1, h2, h3 {
 	  text-align: center;
 	  color: #737373;
+  }
+  p {
+	  text-align: center;
+	  color: #a3a3a3;
   }
 /*
   body > div:nth-child(1) {
@@ -92,14 +96,17 @@
 	  width: 10%;
   }
   
-  #circle {
+  .circle {
 	width: 20px;
 	height: 20px;
 	position: center;
-	background: white;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
+}
+
+.white {
+	background: white;
 }
 
 .centered {
@@ -108,6 +115,23 @@
   left: 50%;
   margin-top: -50px;
   margin-left: -100px;
+}
+
+.center {
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+
+#theForm {
+	margin-top: 50px;
+	height: 30px;
+}
+
+.submit {
+	margin-top: 50px;
+	height: 30px;
 }
   
   
