@@ -30,6 +30,16 @@
 	  text-align: center;
 	  color: #a3a3a3;
   }
+  
+  #description-title {
+	  color: #ff0b40;
+  }
+  .noun {
+	  color: #ffc963;
+  }
+  .games {
+  	color: #ff0b40;
+  }
 /*
   body > div:nth-child(1) {
     background-image:url(../img/startup-bg.png) top;
@@ -139,7 +149,7 @@
   top: 50%;
   left: 50%;
   margin-top: -50px;
-  margin-left: -100px;
+  margin-left: -120px;
 }
 
 .center {
@@ -160,6 +170,25 @@
 .submit {
 	margin-top: 50px;
 	height: 30px;
+}
+
+.btn {
+	margin-top: 170px;
+	color: #ffc963;
+	border: 3px solid #ffc963;
+	
+	-webkit-transition: opacity 3s ease-in-out;
+    -moz-transition: opacity 3s ease-in-out;
+    -ms-transition: opacity 3s ease-in-out;
+    -o-transition: opacity 3s ease-in-out;
+}
+
+.hide {
+	opacity: 0;
+}
+.btn-1e:after {
+	background: rgba(255, 201, 99, 0.89);
+
 }
   
   
@@ -182,6 +211,10 @@
 	 .next {
 	 	top: 42%;
 	}
+	
+	.description {
+		font-size: 99%;
+	}
 	  
 	
 	  .simform {
@@ -198,9 +231,11 @@
   #logo-symbol {
 	  width: 20%;
   }
+/*
   #first-description-circle {
 	  margin-top: 25em;
   }
+*/
   .next {
 	top: 43%;
   }  
