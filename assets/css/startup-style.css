@@ -65,10 +65,35 @@
 	background: #ff0b40;
   }
   
+  #bottom {
+ 	 width: 120%;
+ 	 background: -webkit-linear-gradient(#ffc963 0%, rgba(255,201,99,0.64) 10%)
+  }
+  
+  #right-red {
+	  height: 220%;
+	  width: 128%;
+	  background: -webkit-linear-gradient(rgba(255, 60, 102, 0.9)  1.17%, #ff0b40 110%);  
+  }
+  
+  #left-red {
+	background: -webkit-linear-gradient(rgba(255, 60, 102, 0.9)  24.17%, #ff0b40 110%);
+  }
+  
+  
   .yellow {  
-	background: #ffc963;/*rgba(255, 230, 129, 1);*/
+	background: #ffc963;	
+	/*rgba(255, 201, 99, 0.86); /*#ffc963; *//*rgba(255, 230, 129, 1);*/
 	overflow: hidden;
   }
+  
+  #top-right-yellow {
+	  background: -webkit-linear-gradient(#ffc963 30%, rgba(255, 201, 99, 0.9) 80.05%);
+	  width: 70%;
+
+  }
+  
+
   
    .red {
   	background:  #ff0b40;
@@ -96,7 +121,7 @@
 	  width: 10%;
   }
   
-  .circle {
+.circle {
 	width: 20px;
 	height: 20px;
 	position: center;
@@ -118,15 +143,18 @@
 }
 
 .center {
-     float: none;
-     margin-left: auto;
-     margin-right: auto;
+ float: none;
+ margin-left: auto;
+ margin-right: auto;
 }
 
 
 #theForm {
-	margin-top: 50px;
-	height: 30px;
+	margin-top: 37%;	
+}
+
+.next {
+	top: 43%;
 }
 
 .submit {
@@ -138,19 +166,31 @@
  /* For tablets and smaller */
 @media (max-width: 1024px) {
   
-  .big-sides{
-/* 	  /padding-left: 20em; */
-	  left: 40px;
+	  .big-sides{
+	/* 	  /padding-left: 20em; */
+		  left: 40px;
+	  }
+	  #left-red {
+		margin-left: -15%;
+		margin-top: -20%;
+	  }
+	  
+	  #theForm {
+	    margin-top: 40%;
+  	  }
+	  
+	 .next {
+	 	top: 42%;
+	}
+	  
+	
+	  .simform {
+	  width: 60%;
   }
- 
+}
   
-  
-  
-  
-  }
-  
-  @media (max-width: 760px) {
-  
+@media (max-width: 760px) {
+	
   .logo {
 	  width: 45%;
   }
@@ -160,19 +200,25 @@
   }
   #first-description-circle {
 	  margin-top: 25em;
-/* 	  padding-top: 40px; */
   }
-/*
-  .logo {
-
-	  width: 10%;
+  .next {
+	top: 43%;
+  }  
+  
+   #theForm {
+	margin-top: 80%;
   }
-*/
   
-  
-  
-  
+  .simform {
+	  width: 80%;
   }
+  
+  #left-red {
+	margin-left: -60%;
+	margin-top: -80%;
+  }
+  
+}
 
 	/*
 #bg2 {
@@ -186,18 +232,10 @@
 	}
 */
 	  
-	  #bottom {
-		  width: 120%;
-	  }
-	  #right-red {
-		  height: 128%;
-		  width: 128%;
-	  }
-	  
+
 	  
  
  #top-right-yellow {
-	 width: 70%;
  }
   
   #triangle-right {

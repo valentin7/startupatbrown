@@ -16,8 +16,8 @@
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet"> 
 
-    <link href="assets/css/startup-style.css" rel="stylesheet">
     <link href="assets/css/component.css" rel="stylesheet">
+    <link href="assets/css/startup-style.css" rel="stylesheet">
     <script src="assets/js/modernizr.custom.js"></script>
 
 
@@ -33,9 +33,9 @@
         
   </section>
 
-  <div class="red big-sides"  data-0-top="transform:translate(-85%,-10%)rotate(-40deg);" data-100p="transform:translate(-45%,10%)rotate(-50deg)"> </div>
+  <div id="left-red" class="red big-sides"  data-0-top="transform:translate(-85%,-10%)rotate(-40deg);" data-100p="transform:translate(-45%,10%)rotate(-50deg)"> </div>
 
-  <div id="right-red" class="red big-sides" data-0-top="transform:translate(70%,30%)rotate(30deg);" data-100p="transform:translate(0%,25%)rotate(30deg)"> </div>
+  <div id="right-red" class="red big-sides" data-0-top="transform:translate(75%,-20%)rotate(30deg);" data-100p="transform:translate(10%,10%)rotate(30deg)"> </div>
 
 
   <div id="top-right-yellow" class="yellow big-sides" data-0-top="transform:translate(85%,-98%)rotate(-30deg);" data-100p="transform:translate(70%,-60%)rotate(5deg)"> </div>
@@ -59,7 +59,7 @@
 <!--                   <button onclick="scrollToBottom()">Register</button>
  -->
     <div class="center circle white"  data-50p="opacity:0; transform:translate(0%, -1700%)scale(1);" data-51p="opacity:1" data-100p="opacity:1; transform:translate(0%, -80%)scale(150);"></div>
-    <div id="first-description-circle" data-53p="opacity:0; transform:translate(0%, -700%)scale(0);" data-80p="opacity:1; transform:translate(0%, -1000%)scale(1);"> <h1>Connecting students with startups.</h1></div>
+    <div id="first-description-circle" data-53p="opacity:0; transform:translate(0%, -700%)scale(0);" data-80p="opacity:1; transform:translate(0%, -1000%)scale(1);"> <h1>A weekend of workshops, presentations, breakout sessions, and games.</h1></div>
   <!--   <div class="center circle red"  data-53p="opacity:0; transform:translate(0%, -1700%)scale(1);" data-54p="opacity:1" data-105p="opacity:1; transform:translate(0%, -80%)scale(150);"></div>
      <div class="center circle yellow"  data-56p="opacity:0; transform:translate(0%, -1700%)scale(1);" data-57p="opacity:1" data-105p="opacity:1; transform:translate(0%, -80%)scale(150);"></div>
       <div class="center circle white"  data-59p="opacity:0; transform:translate(0%, -1700%)scale(1);" data-60p="opacity:1" data-105p="opacity:1; transform:translate(0%, -80%)scale(150);"></div> -->
@@ -74,8 +74,7 @@
 <!--                 <div onclick="scrollToBottom()">Register</div>
  -->
 
-  <form id="theForm" class="simform center" autocomplete="off"
-        data-0="transform:translate(0,0%);" data-50p="transform:translate(0,40%);" data-100p="transform:translate(0,0%);">
+  <form id="theForm" class="simform center" autocomplete="off" data-0p="opacity:1" data-4p="opacity:0">
             <div class="simform-inner">
               <ol class="questions">
                 <li>
@@ -91,7 +90,7 @@
                   <input id="q3" name="q3" type="text"/>
                 </li>
                 <li>
-                  <span><label for="q4">What year are you?</label></span>
+                  <span><label for="q4">What year do you graduate?</label></span>
                   <input id="q4" name="q4" type="text"/>
                 </li>
                 <li>
@@ -147,7 +146,7 @@
 
           // let's just simulate something...
           var messageEl = theForm.querySelector( '.final-message' );
-          messageEl.innerHTML = 'Thank you! We\'ll be in touch.';
+          messageEl.innerHTML = 'Thank you! We\'ll be in touch. (P.S. this still does not work, check back later)';
           classie.addClass( messageEl, 'show' );
         }
       } );
